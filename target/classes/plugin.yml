@@ -1,0 +1,40 @@
+name: EWarp
+main: therr.EWarp.EWarp
+version: 1.4
+author: Mateusz Buchajewicz
+commands:
+  setwarp:
+    description: Sets warp with given name in place where you are.
+    usage: /setwarp [warp_name]
+    permission: EWarp.setwarp
+    permissoin-message: You don't have permission to use setwarp!
+  warp:
+    description: Teleports you to warp with given name.
+    usage: /warp [warp_name]
+    permission: EWarp.warp
+    permissoin-message: You don't have permission to use warp!
+  delwarp:
+    description: Deletes warp with given name
+    usage: /delwarp [warp_name]
+    permission: EWarp.delwarp
+    permissoin-message: You don't have permission to use delwarp!
+  warplist:
+    description: Shows list of current warps
+    usage: /warplist
+    permission: EWarp.warplist
+    permissoin-message: You don't have permission to use warplist!
+  warprename:
+    description: Renames warp
+    usage: /warprename [warp_to_rename] [new_name]
+    permission: EWarp.warprename
+    permission-message: You don't have permission to use warprename!
+  warpupdate:
+    description: Updates existing's warp location to current player location.
+    usage: /warpupdate [warp_to_update]
+    permission: EWarp.warpupdate
+    permission-message: You don't have permission to use warpUpdate!
+  warploadmap:
+    description: update the warps.yml file
+    usage: /warpshare warps.yml
+    permission-message: You don't have permission to use warploadmap!
+    permission: EWarp.updatefile
